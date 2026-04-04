@@ -1,62 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joshua Etim | Portfolio</title>
-  <style>
-    body { margin:0; font-family: 'Montserrat', sans-serif; background:#ffffff; color:#1a1a1a; }
-    header { background: url('generated_hero.png') center/cover no-repeat; filter: blur(4px); position: relative; background:#f0f4fa; padding:60px 20px; text-align:center; }
-    header img { width:160px; height:160px; border-radius:50%; object-fit:cover; }
-    nav { display:flex; justify-content:center; gap:30px; padding:20px; background:#ffffff; position:sticky; top:0; }
-    nav a { text-decoration:none; font-weight:600; color:#1a1a1a; }
-    section { padding:60px 20px; max-width:1000px; margin:auto; }
-    h2 { color:#2b6cb0; }
-    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-    .card { padding:20px; border-radius:12px; background:#f7faff; box-shadow:0 4px 12px rgba(0,0,0,0.05); transition:0.3s; }
-    .card:hover { transform:translateY(-5px); }
-    form { display:flex; flex-direction:column; gap:15px; }
-    input, textarea { padding:12px; border-radius:8px; border:1px solid #ccc; }
-    button { padding:14px 20px; background:#2b6cb0; color:white; border:none; border-radius:8px; font-size:16px; cursor:pointer; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joedie Digitals – Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #1b1b1b; /* darker background */
+            color: #f2f2f2;
+        }
+
+        /* NAVBAR */
+        header {
+            width: 100%;
+            background: #111;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            width: 45px;
+            height: 45px;
+            background: #4CAF50; /* temporary logo color */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+        }
+
+        .company-name {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: #f2f2f2;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 150px 50px 80px;
+        }
+
+        .hero-text {
+            width: 55%;
+        }
+
+        .hero-text h1 {
+            font-size: 45px;
+            color: #fff;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #ccc;
+        }
+
+        .hero-img img {
+            width: 320px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+        }
+
+        /* SECTION STYLING */
+        section {
+            padding: 50px;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+
+        footer {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            color: #ccc;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <header id="home">
-    <img src="generated_hero.png" alt="Joshua Etim" />
-    <h1>Hi, I'm <span style="color:#2b6cb0">Joshua Etim</span></h1>
-    <p>Aspiring Digital Marketing Professional • Web Designer • Data Analyst</p>
-  </header>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m <strong>Joshua Etim</strong>, a digital marketing professional with a strong foundation in data analysis and creative strategy. My journey began with Acadium and Coursera training, where I developed skills in web design, SEO, and paid media campaigns. I currently work part‑time at a boutique paid media agency, managing campaigns, analyzing performance, and delivering optimized results.</p>
-    <p>With a background in Civil Engineering, I combine analytical precision with digital expertise — allowing me to think both strategically and creatively when solving marketing challenges.</p>
-  </section>
-  <section id="services">
-    <h2>My Services</h2>
-    <div class="services">
-      <div class="card"><h3>Web Design</h3><p>Modern, responsive and user‑friendly websites.</p></div>
-      <div class="card"><h3>Digital Marketing</h3><p>Strategy, ads, analytics & campaign management.</p></div>
-      <div class="card"><h3>Data Analysis</h3><p>Insights & performance data you can act on.</p></div>
-      <div class="card"><h3>SEO</h3><p>Boost visibility and search engine ranking.</p></div>
-      <div class="card"><h3>SEM</h3><p>Paid search strategies that convert.</p></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo-section">
+            <div class="logo">J</div>
+            <div class="company-name">Joedie Digitals</div>
+        </div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm Oluwatomisin</h1>
+            <p>A passionate digital marketer and apprentice at Acadium.  
+               I help brands grow using strategic marketing, content creation, and digital advisory services.</p>
+        </div>
+
+        <div class="hero-img">
+            <img src="YOUR_IMAGE_FILENAME.jpg" alt="Profile Image">
+        </div>
     </div>
-  </section>
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <strong>oluwatomisinetim@gmail.com</strong></p>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="text" placeholder="Subject" required />
-      <textarea rows="5" placeholder="Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+
+
+    <!-- ABOUT -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a digital marketing apprentice with strong interest in social media management,
+            email marketing, and branding. My goal is to help businesses grow using modern
+            digital strategies.
+        </p>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Social Media Marketing</li>
+            <li>Content Creation</li>
+            <li>Brand Strategy</li>
+            <li>Email Marketing</li>
+            <li>Canva Graphics</li>
+        </ul>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: oluwatomisinetim@gmail.com</p>
+    </section>
+
+
+    <footer>
+        © 2024 Joedie Digitals — All rights reserved.
+    </footer>
+
 </body>
 </html>
