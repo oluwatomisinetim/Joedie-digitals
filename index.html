@@ -1,62 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joshua Etim | Portfolio</title>
-  <style>
-    body { margin:0; font-family: 'Montserrat', sans-serif; background:#ffffff; color:#1a1a1a; }
-    header { background: url('generated_hero.png') center/cover no-repeat; filter: blur(4px); position: relative; background:#f0f4fa; padding:60px 20px; text-align:center; }
-    header img { width:160px; height:160px; border-radius:50%; object-fit:cover; }
-    nav { display:flex; justify-content:center; gap:30px; padding:20px; background:#ffffff; position:sticky; top:0; }
-    nav a { text-decoration:none; font-weight:600; color:#1a1a1a; }
-    section { padding:60px 20px; max-width:1000px; margin:auto; }
-    h2 { color:#2b6cb0; }
-    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-    .card { padding:20px; border-radius:12px; background:#f7faff; box-shadow:0 4px 12px rgba(0,0,0,0.05); transition:0.3s; }
-    .card:hover { transform:translateY(-5px); }
-    form { display:flex; flex-direction:column; gap:15px; }
-    input, textarea { padding:12px; border-radius:8px; border:1px solid #ccc; }
-    button { padding:14px 20px; background:#2b6cb0; color:white; border:none; border-radius:8px; font-size:16px; cursor:pointer; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joedi Digitals – Driving Growth Online</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            background: #ffffff; /* clean white */
+            color: #222;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+            background: #ffffff;
+            border-bottom: 1px solid #eee;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #222;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            line-height: 1.2;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .hero img {
+            border-radius: 12px;
+            width: 350px;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 28px;
+            background: #1e3a8a;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        section {
+            padding: 60px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 12px;
+            background: white;
+            text-align: center;
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            background: #111827;
+            color: white;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+            .hero img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <header id="home">
-    <img src="generated_hero.png" alt="Joshua Etim" />
-    <h1>Hi, I'm <span style="color:#2b6cb0">Joshua Etim</span></h1>
-    <p>Aspiring Digital Marketing Professional • Web Designer • Data Analyst</p>
-  </header>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m <strong>Joshua Etim</strong>, a digital marketing professional with a strong foundation in data analysis and creative strategy. My journey began with Acadium and Coursera training, where I developed skills in web design, SEO, and paid media campaigns. I currently work part‑time at a boutique paid media agency, managing campaigns, analyzing performance, and delivering optimized results.</p>
-    <p>With a background in Civil Engineering, I combine analytical precision with digital expertise — allowing me to think both strategically and creatively when solving marketing challenges.</p>
-  </section>
-  <section id="services">
-    <h2>My Services</h2>
-    <div class="services">
-      <div class="card"><h3>Web Design</h3><p>Modern, responsive and user‑friendly websites.</p></div>
-      <div class="card"><h3>Digital Marketing</h3><p>Strategy, ads, analytics & campaign management.</p></div>
-      <div class="card"><h3>Data Analysis</h3><p>Insights & performance data you can act on.</p></div>
-      <div class="card"><h3>SEO</h3><p>Boost visibility and search engine ranking.</p></div>
-      <div class="card"><h3>SEM</h3><p>Paid search strategies that convert.</p></div>
+
+<header>
+    <img src="joedi-logo.png" alt="Joedi Digitals Logo">
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>We Grow Brands Digitally</h1>
+        <p>Joedi Digitals helps businesses scale using modern digital tools, marketing strategy, 
+           and technology-driven creativity.</p>
+
+        <a href="#contact" class="btn-primary">Work With Us</a>
     </div>
-  </section>
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <strong>oluwatomisinetim@gmail.com</strong></p>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="text" placeholder="Subject" required />
-      <textarea rows="5" placeholder="Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+
+    <img src="profile.png" alt="Founder Photo">
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+        <div class="service-card">
+            <img src="service1.png" alt="Service Image">
+            <h3>Brand Identity & Design</h3>
+            <p>Professional branding that positions your business for authority and trust.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="service2.png" alt="Service Image">
+            <h3>Website Development</h3>
+            <p>Modern, responsive websites optimized for conversion and visibility.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="service3.png" alt="Service Image">
+            <h3>Social Media Strategy</h3>
+            <p>Grow your online presence with content that attracts, engages, and converts.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="service4.png" alt="Service Image">
+            <h3>Digital Advertising</h3>
+            <p>Data-driven ads that deliver real, measurable results for your brand.</p>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Joedi Digitals</h2>
+    <p style="max-width: 800px; margin: auto; text-align: center;">
+        We help brands reach their full digital potential through strategy, design, and data-driven growth solutions.  
+        With expertise in branding, marketing, and creative development, we deliver results that matter.
+    </p>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p style="text-align: center;">Email: <strong>oluwatomisinetim@gmail.com</strong></p>
+    <p style="text-align: center;">Phone/WhatsApp: <strong>+234 810 263 7088</strong></p>
+</section>
+
+<footer>
+    © 2024 Joedi Digitals – Driving Growth Online
+</footer>
+
 </body>
 </html>
