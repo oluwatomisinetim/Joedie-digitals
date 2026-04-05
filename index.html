@@ -3,195 +3,221 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joedi Digitals – Driving Growth Online</title>
+    <title>Joedi Digitals – Portfolio</title>
 
     <style>
         body {
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
-            font-family: "Poppins", sans-serif;
-            background: #ffffff; /* clean white */
+            padding: 0;
+            background: #ffffff;
             color: #222;
         }
 
         header {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 20px 60px;
+            justify-content: space-between;
+            padding: 20px 40px;
             background: #ffffff;
-            border-bottom: 1px solid #eee;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         header img {
-            height: 60px;
+            height: 65px;
         }
 
-        nav a {
-            margin-left: 25px;
-            text-decoration: none;
-            font-weight: 500;
-            color: #222;
+        header h1 {
+            margin: 0;
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: #0a0a0a;
         }
 
         .hero {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 60px;
+            padding: 60px 40px;
+            background: #f7f7f7;
         }
 
-        .hero-text h1 {
-            font-size: 48px;
-            line-height: 1.2;
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
         }
 
         .hero-text p {
             font-size: 18px;
-            color: #555;
+            line-height: 1.6;
+            max-width: 85%;
         }
 
         .hero img {
-            border-radius: 12px;
-            width: 350px;
-            height: auto;
+            width: 340px;
+            height: 340px;
+            border-radius: 20px;
             object-fit: cover;
-        }
-
-        .btn-primary {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 12px 28px;
-            background: #1e3a8a;
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
         }
 
         section {
-            padding: 60px;
+            padding: 60px 40px;
         }
 
-        .section-title {
-            text-align: center;
-            font-size: 32px;
+        h2.section-title {
+            font-size: 30px;
             margin-bottom: 20px;
+            text-align: center;
+            color: #111;
+        }
+
+        .about-box {
+            max-width: 850px;
+            margin: auto;
+            line-height: 1.7;
+            font-size: 18px;
+            background: #fafafa;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
         }
 
         .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
         }
 
         .service-card {
-            border: 1px solid #eee;
-            padding: 20px;
+            background: #fafafa;
             border-radius: 12px;
-            background: white;
+            padding: 20px;
             text-align: center;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.08);
         }
 
         .service-card img {
             width: 100%;
+            height: 180px;
             border-radius: 10px;
+            object-fit: cover;
             margin-bottom: 15px;
         }
 
         footer {
-            padding: 30px;
             text-align: center;
-            background: #111827;
+            padding: 25px;
+            background: #111;
             color: white;
             margin-top: 40px;
         }
 
-        @media(max-width: 768px) {
-            .hero {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
-            .hero img {
-                width: 80%;
-                margin-bottom: 20px;
-            }
+        footer p {
+            margin: 5px 0;
         }
     </style>
 </head>
-
 <body>
 
-<header>
-    <img src="joedi-logo.png" alt="Joedi Digitals Logo">
+    <!-- HEADER -->
+    <header>
+        <img src="joedi-logo.jpg" alt="Joedi Digitals Logo">
+        <h1>Joedi Digitals</h1>
+    </header>
 
-    <nav>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="hero-text">
-        <h1>We Grow Brands Digitally</h1>
-        <p>Joedi Digitals helps businesses scale using modern digital tools, marketing strategy, 
-           and technology-driven creativity.</p>
-
-        <a href="#contact" class="btn-primary">Work With Us</a>
-    </div>
-
-    <img src="profile.png" alt="Founder Photo">
-</section>
-
-<section id="services">
-    <h2 class="section-title">Our Services</h2>
-
-    <div class="services">
-
-        <div class="service-card">
-            <img src="service1.png" alt="Service Image">
-            <h3>Brand Identity & Design</h3>
-            <p>Professional branding that positions your business for authority and trust.</p>
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Hello, I'm Joshua Etim</h2>
+            <p>Digital Marketing Coordinator specializing in Meta & Google Ads, paid media strategy, analytics & performance marketing.</p>
         </div>
 
-        <div class="service-card">
-            <img src="service2.png" alt="Service Image">
-            <h3>Website Development</h3>
-            <p>Modern, responsive websites optimized for conversion and visibility.</p>
+        <img src="Profile.jpg" alt="Profile Photo">
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-box">
+            <p>
+                I am a Digital Marketing Coordinator with hands-on experience managing Meta and Google Ads campaigns for clothing brands and service businesses. I specialize in building and optimizing paid media campaigns that drive measurable results.
+            </p>
+
+            <p>
+                My work includes campaign setup, performance optimization, audience targeting, and reporting using Google Sheets and marketing analytics tools. I currently work with a boutique agency where I manage advertising campaigns, analyze performance data, and prepare client-facing reports.
+            </p>
+
+            <p>
+                I also have experience with social media marketing, Pinterest campaigns, and website design. My background in Civil Engineering strengthened my analytical and problem-solving skills, which I now apply to performance marketing and data-driven advertising.
+            </p>
+
+            <h3>Skills:</h3>
+            <ul>
+                <li>Meta Ads (Facebook & Instagram)</li>
+                <li>Google Ads (Search & Performance Max)</li>
+                <li>Paid Media Strategy</li>
+                <li>Marketing Analytics & Reporting</li>
+                <li>Social Media Advertising</li>
+                <li>Campaign Optimization</li>
+            </ul>
+
+            <h3>Open to Roles:</h3>
+            <ul>
+                <li>Digital Marketing Specialist</li>
+                <li>PPC Specialist</li>
+                <li>Paid Media Associate</li>
+                <li>Marketing Analyst</li>
+                <li>Marketing Apprenticeships</li>
+            </ul>
+
+            <p>Open to remote roles worldwide.</p>
         </div>
+    </section>
 
-        <div class="service-card">
-            <img src="service3.png" alt="Service Image">
-            <h3>Social Media Strategy</h3>
-            <p>Grow your online presence with content that attracts, engages, and converts.</p>
+    <!-- SERVICES SECTION -->
+    <section>
+        <h2 class="section-title">My Services</h2>
+
+        <div class="services">
+            <div class="service-card">
+                <img src="service1.jpg">
+                <h3>Meta Ads Management</h3>
+                <p>High-performance Facebook & Instagram campaigns tailored for growth.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="service2.jpg">
+                <h3>Google Ads Management</h3>
+                <p>Search, Display & Performance Max campaigns for measurable ROI.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="service3.jpg">
+                <h3>Social Media Marketing</h3>
+                <p>Content strategy, engagement growth, and brand positioning.</p>
+            </div>
+
+            <div class="service-card">
+                <img src="service4.jpg">
+                <h3>Website Design</h3>
+                <p>Responsive, clean, and conversion-optimized business websites.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="service-card">
-            <img src="service4.png" alt="Service Image">
-            <h3>Digital Advertising</h3>
-            <p>Data-driven ads that deliver real, measurable results for your brand.</p>
-        </div>
-    </div>
-</section>
-
-<section id="about">
-    <h2 class="section-title">About Joedi Digitals</h2>
-    <p style="max-width: 800px; margin: auto; text-align: center;">
-        We help brands reach their full digital potential through strategy, design, and data-driven growth solutions.  
-        With expertise in branding, marketing, and creative development, we deliver results that matter.
-    </p>
-</section>
-
-<section id="contact">
-    <h2 class="section-title">Contact Us</h2>
-    <p style="text-align: center;">Email: <strong>oluwatomisinetim@gmail.com</strong></p>
-    <p style="text-align: center;">Phone/WhatsApp: <strong>+234 810 263 7088</strong></p>
-</section>
-
-<footer>
-    © 2024 Joedi Digitals – Driving Growth Online
-</footer>
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2024 Joedi Digitals</p>
+        <p>Digital Marketing • Paid Media • Web Design</p>
+    </footer>
 
 </body>
 </html>
