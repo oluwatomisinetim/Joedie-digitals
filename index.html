@@ -4,16 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- SEO -->
-<title>Joedi Digitals | AI Marketing & Ads Expert</title>
-<meta name="description" content="Grow your business with AI-powered marketing, paid ads, and high-converting strategies.">
-<meta name="keywords" content="AI marketing, facebook ads, google ads, digital marketing">
-<meta name="author" content="Joedi Digitals">
+<title>Joedi Digitals | AI Marketing Agency</title>
 
-<!-- Performance -->
+<meta name="description" content="We help businesses grow using AI marketing, paid ads and high converting strategies">
+
 <link rel="preload" as="image" href="profile.png">
 
-<!-- AOS Animation -->
 <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 <style>
@@ -21,7 +17,7 @@ body {
     margin: 0;
     font-family: Segoe UI;
     background: #0b0f1a;
-    color: #fff;
+    color: white;
 }
 
 /* HEADER */
@@ -62,12 +58,16 @@ nav a {
     text-decoration: none;
 }
 
+/* SECTION */
+section {
+    padding: 60px;
+}
+
 /* SERVICES */
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 20px;
-    padding: 60px;
 }
 
 .card {
@@ -79,6 +79,12 @@ nav a {
 
 .card:hover {
     transform: translateY(-10px);
+}
+
+/* PORTFOLIO */
+.portfolio img {
+    width: 100%;
+    border-radius: 10px;
 }
 
 /* CONTACT */
@@ -105,7 +111,6 @@ button {
     background: #25D366;
     padding: 15px;
     border-radius: 50%;
-    text-decoration: none;
 }
 </style>
 
@@ -115,10 +120,12 @@ button {
 
 <!-- HEADER -->
 <header>
-    <img src="joedi-Logo.jpg" height="50" alt="Logo">
+    <img src="joedi-Logo.jpg" height="50">
     <nav>
         <a href="#">Home</a>
+        <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
@@ -127,16 +134,22 @@ button {
 <section class="hero">
     <div data-aos="fade-right">
         <h1>Scale Your Business With AI Marketing</h1>
-        <p>Premium digital strategies that drive real growth.</p>
-        <a href="#contact" class="btn">Get Started</a>
+        <p>I help brands grow with high-converting ads and smart strategies.</p>
+        <a href="#contact" class="btn">Work With Me</a>
     </div>
 
     <img src="profile.png" loading="lazy" data-aos="fade-left">
 </section>
 
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a digital marketing expert focused on helping businesses grow using AI, paid ads and data-driven strategies.</p>
+</section>
+
 <!-- SERVICES -->
 <section id="services">
-<h2 style="text-align:center;">Services</h2>
+<h2>Services</h2>
 
 <div class="services">
 
@@ -151,18 +164,28 @@ button {
 </div>
 
 <div class="card" data-aos="zoom-in">
-<h3>Brand Growth</h3>
-<p>Build authority and visibility online.</p>
+<h3>Social Media Growth</h3>
+<p>Grow your audience and brand visibility.</p>
 </div>
 
 </div>
 </section>
 
+<!-- PORTFOLIO -->
+<section id="portfolio">
+<h2>Portfolio</h2>
+<div class="portfolio">
+<img src="https://source.unsplash.com/600x400/?marketing" loading="lazy">
+<img src="https://source.unsplash.com/600x400/?analytics" loading="lazy">
+<img src="https://source.unsplash.com/600x400/?dashboard" loading="lazy">
+</div>
+</section>
+
 <!-- CONTACT -->
-<section id="contact" style="padding:60px;">
+<section id="contact">
 <h2>Contact Me</h2>
 
-<form action="https://formspree.io/f/abcxyz123" method="POST">
+<form action="https://formspree.io/f/yourID" method="POST">
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Your Email" required>
 <textarea name="message" placeholder="Message"></textarea>
@@ -180,7 +203,7 @@ button {
 <a href="https://wa.me/2348102637088" class="whatsapp">💬</a>
 
 <!-- Scripts -->
-<script defer src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
 AOS.init();
 </script>
