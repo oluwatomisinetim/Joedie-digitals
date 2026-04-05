@@ -94,6 +94,18 @@ section {
     border-radius: 10px;
 }
 
+/* Grid layout */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Center content inside cards */
+.portfolio .card {
+    text-align: center;
+}
+
 /* CONTACT */
 form input, textarea {
     width: 100%;
@@ -157,15 +169,15 @@ Digital Marketing Coordinator with hands-on experience managing Meta and Google 
 </p>
 
 <p>
-I specialize in building and optimizing paid media campaigns that drive measurable results. My work includes campaign setup, performance optimization, audience targeting, and reporting using Google Sheets and marketing analytics tools.
+I specialize in building and optimizing paid media campaigns that drive measurable results including campaign setup, optimization, audience targeting, and reporting using analytics tools.
 </p>
 
 <p>
-I currently work with a boutique agency where I manage advertising campaigns, analyze performance data, and prepare client-facing reports. I also have experience with social media marketing, Pinterest campaigns, and website design.
+I currently work with a boutique agency where I manage advertising campaigns, analyze performance data, and prepare client-facing reports. I also have experience in social media marketing, Pinterest campaigns, and website design.
 </p>
 
 <p>
-My background in Civil Engineering strengthened my analytical and problem-solving skills, which I now apply to performance marketing and data-driven advertising.
+My background in Civil Engineering strengthened my analytical and problem-solving skills, which I now apply to performance marketing.
 </p>
 
 <h3>Skills:</h3>
@@ -176,6 +188,7 @@ My background in Civil Engineering strengthened my analytical and problem-solvin
 <li>Marketing Analytics & Reporting</li>
 <li>Social Media Advertising</li>
 <li>Campaign Optimization</li>
+<li><strong>Website Design</strong></li>
 </ul>
 
 <h3>Open To:</h3>
@@ -231,11 +244,28 @@ My background in Civil Engineering strengthened my analytical and problem-solvin
 
 <!-- PORTFOLIO -->
 <section id="portfolio">
-<h2>Portfolio</h2>
+<h2 style="text-align:center;">Portfolio</h2>
+
 <div class="portfolio">
-<img src="https://source.unsplash.com/600x400/?marketing" loading="lazy">
-<img src="https://source.unsplash.com/600x400/?analytics" loading="lazy">
-<img src="https://source.unsplash.com/600x400/?dashboard" loading="lazy">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1557838923-2985c318be48" loading="lazy">
+<h3>Meta Ads Campaign</h3>
+<p>Managed Facebook & Instagram campaigns that increased conversions and reduced cost per acquisition.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a" loading="lazy">
+<h3>Google Ads Strategy</h3>
+<p>Built high-performing search campaigns generating consistent leads for service businesses.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" loading="lazy">
+<h3>Website Design Project</h3>
+<p>Designed and developed responsive websites optimized for conversions and user experience.</p>
+</div>
+
 </div>
 </section>
 
