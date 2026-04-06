@@ -7,6 +7,7 @@
 <title>Joedi Digitals | AI Marketing Agency</title>
 
 <meta name="description" content="We help businesses grow using AI marketing, paid ads and high converting strategies">
+<link rel="icon" href="joedi-Logo.jpg">
 
 <link rel="preload" as="image" href="profile.png">
 
@@ -49,25 +50,39 @@ nav a {
     justify-content: space-between;
     padding: 80px 60px;
     align-items: center;
+    flex-wrap: wrap; 
 }
 
 .hero img {
     width: 300px;
     border-radius: 20px;
 }
+    .hero div {
+    max-width: 500px;
+}
 
 /* BUTTON */
 .btn {
     padding: 12px 25px;
-    background: #00c6ff;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
     border-radius: 8px;
-    color: black;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
 }
 
 /* SECTION */
 section {
     padding: 60px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* SERVICES */
@@ -86,6 +101,7 @@ section {
 
 .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 /* PORTFOLIO */
@@ -131,6 +147,72 @@ button {
     padding: 15px;
     border-radius: 50%;
 }
+    /* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+   nav {
+    margin-top: 10px;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    margin: 8px 0;
+}
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero img {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .services,
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    form input,
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .whatsapp {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px;
+    }
+}
 </style>
 
 </head>
@@ -152,7 +234,7 @@ button {
 <!-- HERO -->
 <section class="hero">
     <div data-aos="fade-right">
-        <h1>Scale Your Business With AI Marketing</h1>
+       <h1>I Help Businesses Get More Leads & Sales With Paid Ads</h1>
         <p>I help brands grow with high-converting ads and smart strategies.</p>
         <a href="#contact" class="btn">Work With Me</a>
     </div>
@@ -271,7 +353,8 @@ My background in Civil Engineering strengthened my analytical and problem-solvin
 
 <!-- CONTACT -->
 <section id="contact">
-<h2>Contact Me</h2>
+<h2>Let's Work Together</h2>
+<p>Need more leads or sales? Send me a message and let’s grow your business.</p>
 
 <form action="https://formspree.io/f/xqegggre" method="POST">
 <input type="text" name="name" placeholder="Your Name" required>
@@ -288,7 +371,7 @@ My background in Civil Engineering strengthened my analytical and problem-solvin
 </footer>
 
 <!-- WhatsApp -->
-<a href="https://wa.me/2348102637088" class="whatsapp">💬</a>
+<a href="https://wa.me/2348102637088?text=Hello%20I%20want%20to%20work%20with%20you" class="whatsapp">💬</a>
 
 <!-- Scripts -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
